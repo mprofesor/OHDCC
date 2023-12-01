@@ -57,3 +57,5 @@ elif your_choice == 2:
         print("You win")
     else:
         print("You lose")
+
+# This is really bad at handling wrong input so if it breaks - SORRY ;d
