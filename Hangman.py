@@ -1,7 +1,3 @@
-# TO DO LIST:
-# 1. Create list of words to randomly pick DONE
-# 2. Ask the user to input letter
-# 3. Interpret user input
 import random
 import os
 
@@ -138,6 +134,7 @@ hangman = [
 # Most important variables
 word = word_list[random.randint(0, len(word_list) - 1)]
 word_to_guess = []
+# This list needs to be dynamic
 for letter in word:
     word_to_guess.append('_')
 GameOver = False
@@ -148,6 +145,7 @@ used_letters = []
 # Print some ASCII ART :D
 print(hangman_name)
 
+# Main game loop
 while not GameOver:
     Win = True # I'm later changing it to False to use only one for loop
     InWord = False
@@ -186,7 +184,4 @@ else:
     print("You lose!")
 
 # So this is my solution for creating the Hangman Game Project :D
-
-
-
-
+# Not the prettiest but mine
