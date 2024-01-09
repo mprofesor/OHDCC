@@ -61,6 +61,7 @@ def Calculator():
             print(answer)
         elif choice == 'n':
             system("clear")
+            # Using RECURSION here *.* NICE
             Calculator()
         elif choice == 'q':
             should_continue = False
