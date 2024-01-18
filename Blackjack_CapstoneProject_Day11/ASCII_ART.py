@@ -408,64 +408,69 @@ diamonds_king = """
  
  """
 
+# Head down card
+head_down = """
+  ___
+ |)(*|
+ |(*)|
+ |*)(| 
+
+ """
+
 deck = {
-    "Heart_ace": {"Value_below11": 11, "Value_over11": 1, "Art": heart_ace},
-    "Heart_two": {"Value": 2, "Art": heart_two},
-    "Heart_three": {"Value": 3, "Art": heart_three},
-    "Heart_four": {"Value": 4, "Art": heart_four},
-    "Heart_five": {"Value": 5, "Art": heart_five},
-    "Heart_six": {"Value": 6, "Art": heart_six},
-    "Heart_seven": {"Value": 7, "Art": heart_seven},
-    "Heart_eight": {"Value": 8, "Art": heart_eight},
-    "Heart_nine": {"Value": 9, "Art": heart_nine},
-    "Heart_ten": {"Value": 10, "Art": heart_ten},
-    "Heart_jack": {"Value": 10, "Art": heart_jack},
-    "Heart_queen": {"Value": 10, "Art": heart_queen},
-    "Heart_king": {"Value": 10, "Art": heart_king},
-    "Clubs_ace": {"Value_below11": 11, "Value_over11": 1, "Art": clubs_ace},
-    "Clubs_two": {"Value": 2, "Art": clubs_two},
-    "Clubs_three": {"Value": 3, "Art": clubs_three},
-    "Clubs_four": {"Value": 4, "Art": clubs_four},
-    "Clubs_five": {"Value": 5, "Art": clubs_five},
-    "Clubs_six": {"Value": 6, "Art": clubs_six},
-    "Clubs_seven": {"Value": 7, "Art": clubs_seven},
-    "Clubs_eight": {"Value": 8, "Art": clubs_eight},
-    "Clubs_nine": {"Value": 9, "Art": clubs_nine},
-    "Clubs_ten": {"Value": 10, "Art": clubs_ten},
-    "Clubs_jack": {"Value": 10, "Art": clubs_jack},
-    "Clubs_queen": {"Value": 10, "Art": clubs_queen},
-    "Clubs_king": {"Value": 10, "Art": clubs_king},
-    "Spades_ace": {"Value_below11": 11, "Value_over11": 1, "Art": spades_ace},
-    "Spades_two": {"Value": 2, "Art": spades_two},
-    "Spades_three": {"Value": 3, "Art": spades_three},
-    "Spades_four": {"Value": 4, "Art": spades_four},
-    "Spades_five": {"Value": 5, "Art": spades_five},
-    "Spades_six": {"Value": 6, "Art": spades_six},
-    "Spades_seven": {"Value": 7, "Art": spades_seven},
-    "Spades_eight": {"Value": 8, "Art": spades_eight},
-    "Spades_nine": {"Value": 9, "Art": spades_nine},
-    "Spades_ten": {"Value": 10, "Art": spades_ten},
-    "Spades_jack": {"Value": 10, "Art": spades_jack},
-    "Spades_queen": {"Value": 10, "Art": spades_queen},
-    "Spades_king": {"Value": 10, "Art": spades_king},
-    "Diamonds_ace": {"Value_below11": 11, "Value_over11": 1, "Art": diamonds_ace},
-    "Diamonds_two": {"Value": 2, "Art": diamonds_two},
-    "Diamonds_three": {"Value": 3, "Art": diamonds_three},
-    "Diamonds_four": {"Value": 4, "Art": diamonds_four},
-    "Diamonds_five": {"Value": 5, "Art": diamonds_five},
-    "Diamonds_six": {"Value": 6, "Art": diamonds_six},
-    "Diamonds_seven": {"Value": 7, "Art": diamonds_seven},
-    "Diamonds_eight": {"Value": 8, "Art": diamonds_eight},
-    "Diamonds_nine": {"Value": 9, "Art": diamonds_nine},
-    "Diamonds_ten": {"Value": 10, "Art": diamonds_ten},
-    "Diamonds_jack": {"Value": 10, "Art": diamonds_jack},
-    "Diamonds_queen": {"Value": 10, "Art": diamonds_queen},
-    "Diamonds_king": {"Value": 10, "Art": diamonds_king},
+    "Heart_ace": {"Value_below11": 11, "Value_over11": 1, "Art": heart_ace, "Headown_Art": head_down},
+    "Heart_two": {"Value": 2, "Art": heart_two, "Headown_Art": head_down},
+    "Heart_three": {"Value": 3, "Art": heart_three, "Headown_Art": head_down},
+    "Heart_four": {"Value": 4, "Art": heart_four, "Headown_Art": head_down},
+    "Heart_five": {"Value": 5, "Art": heart_five, "Headown_Art": head_down},
+    "Heart_six": {"Value": 6, "Art": heart_six, "Headown_Art": head_down},
+    "Heart_seven": {"Value": 7, "Art": heart_seven, "Headown_Art": head_down},
+    "Heart_eight": {"Value": 8, "Art": heart_eight, "Headown_Art": head_down},
+    "Heart_nine": {"Value": 9, "Art": heart_nine, "Headown_Art": head_down},
+    "Heart_ten": {"Value": 10, "Art": heart_ten, "Headown_Art": head_down},
+    "Heart_jack": {"Value": 10, "Art": heart_jack, "Headown_Art": head_down},
+    "Heart_queen": {"Value": 10, "Art": heart_queen, "Headown_Art": head_down},
+    "Heart_king": {"Value": 10, "Art": heart_king, "Headown_Art": head_down},
+    "Clubs_ace": {"Value_below11": 11, "Value_over11": 1, "Art": clubs_ace, "Headown_Art": head_down},
+    "Clubs_two": {"Value": 2, "Art": clubs_two, "Headown_Art": head_down},
+    "Clubs_three": {"Value": 3, "Art": clubs_three, "Headown_Art": head_down},
+    "Clubs_four": {"Value": 4, "Art": clubs_four, "Headown_Art": head_down},
+    "Clubs_five": {"Value": 5, "Art": clubs_five, "Headown_Art": head_down},
+    "Clubs_six": {"Value": 6, "Art": clubs_six, "Headown_Art": head_down},
+    "Clubs_seven": {"Value": 7, "Art": clubs_seven, "Headown_Art": head_down},
+    "Clubs_eight": {"Value": 8, "Art": clubs_eight, "Headown_Art": head_down},
+    "Clubs_nine": {"Value": 9, "Art": clubs_nine, "Headown_Art": head_down},
+    "Clubs_ten": {"Value": 10, "Art": clubs_ten, "Headown_Art": head_down},
+    "Clubs_jack": {"Value": 10, "Art": clubs_jack, "Headown_Art": head_down},
+    "Clubs_queen": {"Value": 10, "Art": clubs_queen, "Headown_Art": head_down},
+    "Clubs_king": {"Value": 10, "Art": clubs_king, "Headown_Art": head_down},
+    "Spades_ace": {"Value_below11": 11, "Value_over11": 1, "Art": spades_ace, "Headown_Art": head_down},
+    "Spades_two": {"Value": 2, "Art": spades_two, "Headown_Art": head_down},
+    "Spades_three": {"Value": 3, "Art": spades_three, "Headown_Art": head_down},
+    "Spades_four": {"Value": 4, "Art": spades_four, "Headown_Art": head_down},
+    "Spades_five": {"Value": 5, "Art": spades_five, "Headown_Art": head_down},
+    "Spades_six": {"Value": 6, "Art": spades_six, "Headown_Art": head_down},
+    "Spades_seven": {"Value": 7, "Art": spades_seven, "Headown_Art": head_down},
+    "Spades_eight": {"Value": 8, "Art": spades_eight, "Headown_Art": head_down},
+    "Spades_nine": {"Value": 9, "Art": spades_nine, "Headown_Art": head_down},
+    "Spades_ten": {"Value": 10, "Art": spades_ten, "Headown_Art": head_down},
+    "Spades_jack": {"Value": 10, "Art": spades_jack, "Headown_Art": head_down},
+    "Spades_queen": {"Value": 10, "Art": spades_queen, "Headown_Art": head_down},
+    "Spades_king": {"Value": 10, "Art": spades_king, "Headown_Art": head_down},
+    "Diamonds_ace": {"Value_below11": 11, "Value_over11": 1, "Art": diamonds_ace, "Headown_Art": head_down},
+    "Diamonds_two": {"Value": 2, "Art": diamonds_two, "Headown_Art": head_down},
+    "Diamonds_three": {"Value": 3, "Art": diamonds_three, "Headown_Art": head_down},
+    "Diamonds_four": {"Value": 4, "Art": diamonds_four, "Headown_Art": head_down},
+    "Diamonds_five": {"Value": 5, "Art": diamonds_five, "Headown_Art": head_down},
+    "Diamonds_six": {"Value": 6, "Art": diamonds_six, "Headown_Art": head_down},
+    "Diamonds_seven": {"Value": 7, "Art": diamonds_seven, "Headown_Art": head_down},
+    "Diamonds_eight": {"Value": 8, "Art": diamonds_eight, "Headown_Art": head_down},
+    "Diamonds_nine": {"Value": 9, "Art": diamonds_nine, "Headown_Art": head_down},
+    "Diamonds_ten": {"Value": 10, "Art": diamonds_ten, "Headown_Art": head_down},
+    "Diamonds_jack": {"Value": 10, "Art": diamonds_jack, "Headown_Art": head_down},
+    "Diamonds_queen": {"Value": 10, "Art": diamonds_queen, "Headown_Art": head_down},
+    "Diamonds_king": {"Value": 10, "Art": diamonds_king, "Headown_Art": head_down},
 }
-
-#for key in deck:
- #   print(f"\"{key}\",")
-
 
 deck_names_list = [
 "Heart_ace",
@@ -521,23 +526,3 @@ deck_names_list = [
 "Diamonds_queen",
 "Diamonds_king"
 ]
-
-
-# For now it is working like it should ;d
-#print(deck[deck_names_list[51]]["Value"])
-
-
-# This is my working code to create ascii art xd 
-#hello = "hello"
-#hello = list(hello)
-#hello[0] = 'y'
-#hello = "".join(hello)
-#print(hello)
-#
-#for i in range(2,10):
- #   diamonds_ace = list(diamonds_ace)
-  #  diamonds_ace[9] = str(i)
-   # diamonds_ace = "".join(diamonds_ace)
-    #print(f"diamonds_ = \"\"\"{diamonds_ace}\"\"\"")
-
-
