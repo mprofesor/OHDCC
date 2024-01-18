@@ -2,7 +2,7 @@
 ## What is number guessing game?
 
 Number guessing game is what it is.
-You are guessing the number insinde the scope.
+You are guessing the number inside the scope.
 You have finite number of tries.
 
 ## Files included
