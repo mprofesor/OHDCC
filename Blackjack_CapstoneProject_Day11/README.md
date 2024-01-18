@@ -10,3 +10,6 @@ Blackjack is a casino banking game. It is the most widely played casino banking 
 - README.md _(Just some information)_
 - Blackjack.drawio.pdf _(Flow Chart)_
 - ASCII_ART.py _(Just some ASCII)_
+
+### Update - 01
+In this update I finally fixed some major bugs and now the game works as it should. Also mechanics are corrected and game flow is better added some ASCII ART and new functions.
