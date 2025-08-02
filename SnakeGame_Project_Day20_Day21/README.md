@@ -17,3 +17,7 @@ If snake hit wall or it's tail the game is over.
 - snake.py _(Python Class File)_
 - README.md _(Just some information)_
 - SnakeGame.drawio.pdf _(Flow Chart)_
+
+## Screenshot
+
+![SnakeGameScreenshot](Images/Screenshots/SnakeGameScreenshot.png)
