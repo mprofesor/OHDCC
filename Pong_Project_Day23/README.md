@@ -10,3 +10,7 @@ Pong is a table tennis–themed twitch arcade sports video game, featuring simpl
 - pong.txt _(Just some information)_
 - scoreboard.py _(Python Class File)_
 - README.md _(Just some information)_
+
+## Screenshot
+
+![PongGameScreenshot](Images/Screenshots/PongGameScreenshot.png)
