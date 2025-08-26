@@ -1,0 +1,10 @@
+Breaking down the problem:
+
+1. Create a map
+2. Create a rocket object
+3. Apply movement to the rocket
+4. Create ball
+5. Apply movement to the ball
+6. Apply collision to the ball
+7. Apply AI to the rocket of the opponent
+8. Create a scoreboard
