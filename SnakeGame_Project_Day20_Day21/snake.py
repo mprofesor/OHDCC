@@ -56,6 +56,19 @@ class Snake:
     def turn_left(self):
         self.snake[0].left(90)
 
+    def reset(self):
+        for segment in range(0, self.length):
+            self.snake[segment].setpos(1000, 1000)
+
+        for i in range(self.length - 3):
+            self.snake.pop()
+            self.length = self.length - 1
+        
+        self.snake.clear()
+        self.length = 3
+        self.seg_positions = [(0, 0), (-20, 0), (-40, 0), (-60, 0)]
+        self.hatch()
+
 
         
 

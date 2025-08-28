@@ -45,13 +45,17 @@ while game_on:
     # Hitting wall
     if x_snake_head == -300 or x_snake_head == 300 or y_snake_head == -300 or y_snake_head == 300:
         print("Game over you've hit the wall!")
-        game_on = False
+        new_scoreboard.reset()
+        new_snake.reset()
+        # game_on = False
     
     # Eating tail
     for l in range(1, new_snake.length):
         if x_snake_head == int(round(new_snake.snake[l].pos()[0])) and y_snake_head == int(round(new_snake.snake[l].pos()[1])):
             print("You've eaten your own tail!")
-            game_on = False
+            new_scoreboard.reset()
+            new_snake.reset()
+            # game_on = False
     
 
          
