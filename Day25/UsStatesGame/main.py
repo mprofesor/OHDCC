@@ -24,21 +24,42 @@ turtle.shape(image)
 
 game_on = True
 
+correct_guessed_num = 0
+
+correct_guessed_list = []
+uncorrect_guessed_list = []
+
 while game_on:
-    answer_state = screen.textinput(title="Guess the State", prompt="What's another state's name?")
+    answer_state = screen.textinput(title=f"Guessed correctly {correct_guessed_num}/50", prompt=f"What's another state's name? {correct_guessed_num}/50")
 
     data = pandas.read_csv("50_states.csv")
     states_data = data["state"].to_list()
 
-    print()
-
     if answer_state in states_data:
+        correct_guessed_num += 1
         row_x = data.loc[data["state"] == answer_state, "x"].iloc[0]
         row_y = data.loc[data["state"] == answer_state, "y"].iloc[0]
         row_x, row_y = int(row_x), int(row_y)
         #print(row_x, row_y)
         print(answer_state)
         write_name.name_on_screen(int(row_x), int(row_y), str(answer_state))
+        correct_guessed_list.append(answer_state)
+    else:
+        uncorrect_guessed_list.append(answer_state)
+
+    if correct_guessed_num == 50:
+        score = 0
+
+        all_guessed_list = correct_guessed_list + uncorrect_guessed_list
+
+        for guess in all_guessed_list:
+            if all_guessed_list[guess] in correct_guessed_list:
+                score += 10
+            elif all_guessed_list[guess] in uncorrect_guessed_list:
+                score -= 5
+
+        game_on = False
+
 
 screen.exitonclick()
 
